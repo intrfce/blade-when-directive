@@ -1,0 +1,35 @@
+{
+	"name": "intrfce/laravel-inertia-components",
+	"description": "",
+	"type": "library",
+	"license": "MIT",
+	"require": {
+		"php": "^8.2.0",
+		"laravel/framework": "^11.23.3"
+	},
+	"autoload": {
+		"psr-4": {
+			"Intrfce\\BladeWhenDirective\\": "src/",
+			"Intrfce\\BladeWhenDirective\\Tests\\": "tests/"
+		}
+	},
+	"minimum-stability": "stable",
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Intrfce\\BladeWhenDirective\\Providers\\BladeWhenDirectiveProvider.php"
+			]
+		}
+	},
+	"require-dev": {
+		"tightenco/duster": "^3.0",
+		"pestphp/pest": "^2.23",
+		"orchestra/testbench": "^9.4",
+		"pestphp/pest-plugin-laravel": "^2.4"
+	},
+	"config": {
+		"allow-plugins": {
+			"pestphp/pest-plugin": true
+		}
+	}
+}
